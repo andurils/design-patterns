@@ -14,17 +14,19 @@ namespace DesignPatterns.AbstractFactory
     // 品之间才能够正确地进行交互。
     public interface IAbstractProductB
     {
-        // Product B is able to do its own thing...
+        // Product B is able to do its own thing... 产品B能够自己的事情
         string UsefulFunctionB();
 
-        // ...but it also can collaborate with the ProductA.
+        // ...but it also can collaborate with the ProductA.  可以与ProductA合作。
         //
         // The Abstract Factory makes sure that all products it creates are of
         // the same variant and thus, compatible.
+        // 抽象工厂确保它创建的所有产品都是同一变体，因此是兼容的。
         string AnotherUsefulFunctionB(IAbstractProductA collaborator);
     }
 
     // Concrete Products are created by corresponding Concrete Factories.
+    // 具体产品由相应的具体工厂创建。
     class ConcreteProductB1 : IAbstractProductB
     {
         public string UsefulFunctionB()
@@ -35,6 +37,8 @@ namespace DesignPatterns.AbstractFactory
         // The variant, Product B1, is only able to work correctly with the
         // variant, Product A1. Nevertheless, it accepts any instance of
         // AbstractProductA as an argument.
+        // 变体 Product B1只能与变体 Product A1 正确地工作。
+        // 但是，它接受任何AbstractProductA的实例作为参数。 
         public string AnotherUsefulFunctionB(IAbstractProductA collaborator)
         {
             var result = collaborator.UsefulFunctionA();
@@ -53,6 +57,8 @@ namespace DesignPatterns.AbstractFactory
         // The variant, Product B2, is only able to work correctly with the
         // variant, Product A2. Nevertheless, it accepts any instance of
         // AbstractProductA as an argument.
+        // 变体 Product B2只能与变体 Product A2 正确地工作。
+        // 但是，它接受任何AbstractProductA的实例作为参数。 
         public string AnotherUsefulFunctionB(IAbstractProductA collaborator)
         {
             var result = collaborator.UsefulFunctionA();

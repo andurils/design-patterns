@@ -1,16 +1,14 @@
 # design-patterns
 
-design patterns
-
 不同设计模式的复杂程度、 细节层次以及在整个系统中的应用范围等方面各不相同。 我喜欢将其类比于道路的建造： 如果你希望让十字路口更加安全， 那么可以安装一些交通信号灯， 或者修建包含行人地下通道在内的多层互通式立交桥。
 
 最基础的、 底层的模式通常被称为惯用技巧。 这类模式一般只能在一种编程语言中使用。
 
 最通用的、 高层的模式是构架模式。 开发者可以在任何编程语言中使用这类模式。 与其他模式不同， 它们可用于整个应用程序的架构设计。
 
-## 目录 catalog
+## 目录 Catalog
 
-### 创建型模式 creational
+### 创建型模式 Creational
 
 创建型模式提供了创建对象的机制， 能够提升已有代码的灵活性和可复用性。
 
@@ -20,15 +18,15 @@ design patterns
 - 原型 `Prototype` 让你能够复制已有对象，而又无需使代码依赖它们所属的类
 - 单例 `Singleton` 让你能够保证一个类只有一个实例，并提供一个访问该实例的全局节点
 
-### 结构型模式 structural
+### 结构型模式 Structural
 
 结构型模式介绍如何将对象和类组装成较大的结构， 并同时保持结构的灵活和高效。
 
-### 行为模式 behavioral
+### 行为模式 Behavioral
 
 行为模式负责对象间的高效沟通和职责委派。
 
-## 参考 reference
+## 参考 Reference
 
-https://refactoringguru.cn/design-patterns
-https://emojipedia.org/
+<https://refactoringguru.cn/design-patterns>
+<https://emojipedia.org/>
